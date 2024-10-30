@@ -1,13 +1,13 @@
 Instaling
 
-`In Termux/Vps`
+*In Termux/Vps*
 #git clone https://github.com/balxz/simple-apiBase
-#cd simple-apiBase
+#cd simple-apiBase 
 #npm i
 #node . 
 #npm start
 
-`In Vercel`
+*In Vercel*
 #Fork Repo
 #Login https://vercel.com (Via Akun Gh Mu)
 #Import
