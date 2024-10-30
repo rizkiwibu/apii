@@ -9,26 +9,18 @@ cd simple-apiBase
 npm i
 node . 
 npm start
+```
 
-Di Vercel
+```
+### *Di Vercel*
 
-1. Fork Repo
+Fork Repo
+1.Login ke Vercel (Via Akun GitHub kamu)
+2.Import
+3.Deploy
 
+tunggu aja abistu.
 
-2. Login ke Vercel (Via Akun GitHub kamu)
-
-
-3. Import
-
-
-4. Deploy
-
-
-
-Dh tunggu aja abistu.
-
-
----
 
 "Pemula Puh Jan Di Masak"
 
