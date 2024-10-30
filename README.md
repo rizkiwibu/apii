@@ -1,6 +1,5 @@
 "Pemula Puh Jan Di Masak"
 
-# Instalasi
 
 ### *Di Termux/VPS*
 ```bash
