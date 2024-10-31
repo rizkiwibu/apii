@@ -1,20 +1,20 @@
 const axios = require("axios")
 
 module.exports = async (req, res) => {
-  const q = req.query.q || ""
-  if (!q) {
+  let urls = req.query.urls
+  if (!urls) {
     return res.status(400).json({
-      error: "Mau nanya apa lu njir"
+      error: "Url Tiktok Nya Mana Btw"
     })
   }
 
-  const url = `https://itzpire.com/ai/blackbox-ai?q=${q}`
+  let url = `https://api.yanzbotz.live/api/downloader/tiktok?url=${urls}&apiKey=yanzdev`
 
   try {
     const response = await axios.get(url)
-    const data = response.data.result
+    const videoUrl = response.data.result.video["no-watermark"]
     res.status(200).json({
-      data
+      videoUrl
     })
   } catch (error) {
     res.status(500).json({

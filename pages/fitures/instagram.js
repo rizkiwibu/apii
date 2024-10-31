@@ -1,22 +1,22 @@
 const axios = require("axios")
 
 module.exports = async (req, res) => {
-  const q = req.query.q || ""
-  if (!q) {
+  let urls = req.query.urls
+  if (!urls) {
     return res.status(400).json({
-      error: "Mau nanya apa lu njir"
+      error: "Url Ig Nya Mana?"
     })
   }
 
-  const url = `https://itzpire.com/ai/blackbox-ai?q=${q}`
-
+  let url = `https://api.yanzbotz.live/api/downloader/instagram?url=${urls}{&apiKey=yanzdev`
   try {
     const response = await axios.get(url)
-    const data = response.data.result
+    let data = response.data
+    let vid = data.result[0].url
     res.status(200).json({
-      data
+      video: vid
     })
-  } catch (error) {
+  } catch(e) {
     res.status(500).json({
       error: "Ada masalah, coba lagi nanti"
     })

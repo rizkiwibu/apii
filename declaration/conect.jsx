@@ -10,7 +10,7 @@ const conect = {
   data: `{
      status: 200,
      cmdRun: ${cmdStart.cmd},
-     message: "Server berjalan di port ${port.portnya}
+     message: "Server berjalan di port ${port.portnya}"
 }`
 }
 module.exports = conect
