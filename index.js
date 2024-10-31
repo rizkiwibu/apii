@@ -1,8 +1,4 @@
-/*
-   * by balzz
-   * dont delate my wm
-   * follow more instagram: @iqstore78
-*/
+
 const app = require("./server/app")
 const port = require("./declaration/port.jsx")
 const conect = require("./declaration/conect.jsx")
