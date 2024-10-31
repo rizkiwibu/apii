@@ -1,14 +1,11 @@
-/*
-   * by balzz
-   * dont delete my wm
-   * follow more instagram: @iqstore78
-*/
+
 const express = require("express")
 const axios = require("axios")
 const path = require("path")
 const kotakHytam = require("../pages/fitures/blackbox.js")
 const tiktod = require("../pages/fitures/tiktok.js")
 const igedl = require("../pages/fitures/instagram.js")
+const server = require("../pages/fitures/sepek.js")
 const { limit, checkBanned } = require("../declaration/rateLimit.jsx")
 
 const app = express()
